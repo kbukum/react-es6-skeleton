@@ -1,12 +1,12 @@
-# react ES6 skeleton
+# React ES6 Skeleton
 
 #### initial REACT & ES6 webpack project with support DEV , TEST and PROD environment configurations
 
 
 ##### Motivation
 
-The javascript configurations can be complicated and need to known a lot of things for configure. 
-Oopdev-ui project is base configuration for start to developing code with React by using ES6 style on webpack. 
+The javascript configurations can be complicated and need to known a lot of things to configure the project. 
+React ES6 Skeleton project is base configuration for start to developing code with React by using ES6 style on webpack. 
 Described configurations in md files how and why you need to the it. 
 
 ##### COMMON CONFIGRATION
