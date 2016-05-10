@@ -1,5 +1,26 @@
 ##### WEBPACK CONFIGURATION
 
+###### DEVELOPMENT MODE
+
+* add webpack.config.dev.js file to root folder.
+
+* add script     ```start ``` to **package.json** for start dev 
+        
+    ```sh
+    "start": "webpack-dev-server --config webpack.config.dev.js --colors --port 8080"
+    ```
+    
+    
+    * install webpack and webpack-dev-server library
+    
+    ```sh 
+    npm install --save-dev webpack webpack-dev-server
+    ```
+    
+    * type http://localhost:8080 and now you can see the folder structure of root path.  
+    That's mean webpack-server is running now.
+
+
 ###### configure webpack.config.dev.js
     
 * add below code to webpack.config.dev.js   
