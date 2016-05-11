@@ -84,27 +84,27 @@ $ npm test              # Run unit tests with Mocha
     
 #### Common Configuration ( React  & ES6 )
 
-[Read more!](documents/1-common.md)
+[Read more!](docs/1-common.md)
 
 #### Development Mode ( ESLINT , FACEBOOK/FLOW )
  
- * Common configuration must be configured before the Development Mode configuration  [common settings!](../documents/1-common.md)
+ * Common configuration must be configured before the Development Mode configuration  [common settings!](docs/1-common.md)
 
  * Set up configurations for Development Mode .
-[Read more!](documents/2-dev.md)
+[Read more!](docs/2-dev.md)
     
 #### Test Mode ( KARMA ) 
 
-* Common configuration must be configured before the Test Mode configuration [common settings!](../documents/1-common.md)
+* Common configuration must be configured before the Test Mode configuration [common settings!](docs/1-common.md)
 
 * Set up configurations for Test Mode .
-[Read more!](documents/3-test.md)    
+[Read more!](docs/3-test.md)    
     
 #### Production Mode ( OPTIMIZE & MINIFY & BUILD )
 
-* Common configuration must be configured before the Production Mode configuration   [common settings!](../documents/1-common.md)
+* Common configuration must be configured before the Production Mode configuration   [common settings!](docs/1-common.md)
 
 * Set up configurations for Production Mode .
-[Read more!](documents/4-prod.md)
+[Read more!](docs/4-prod.md)
     
     
