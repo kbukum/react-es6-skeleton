@@ -1,6 +1,6 @@
 ##### TEST MODE 
 
-* Before set up Development Mode you must be sure of the general settings that desribed in [common settings!](./1-common.md)
+    Configuration should applied for Test Development 
 
 ##### KARMA WEBPACK CONFIGURATION
 

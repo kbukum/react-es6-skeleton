@@ -38,19 +38,17 @@ npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-
 
 ```json  
 
-    {
+{
+  presets": [
 
-      "presets": [
+     "react",
 
-         "react",
+     "es2015",
 
-         "es2015",
+     "stage-0"
 
-         "stage-0"
-
-      ]
-
-    }
+  ]
+}
 
 ```
   
@@ -58,10 +56,13 @@ npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-
 
 #### Configuration Webpack 
 
+
+##### 
+
 ##### install webpack library 
 
 ```ssh 
-    npm install --save-dev webpack
+npm install --save-dev webpack
 ```    
     
 *install file loaders which format will import in the code .
@@ -98,13 +99,12 @@ npm install --save-dev style-loader
 ```    
    
         
-* add **webpack.config.common.js** file to root folder to use in **dev**,**test**,**prod** configurations.
-
+* create **webpack.config.common.js** file to root directory to use in **dev**,**test**,**prod** configurations as common configuration.
 
 ###### configure webpack.config.common.js
  
-    
-* add below code to webpack.config.common.js
+
+* add below code to `webpack.config.common.js`
 
 ```javascript
 var path = require("path");
