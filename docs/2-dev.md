@@ -1,9 +1,4 @@
-##### DEVELOPMENT MODE
-
-* Before set up Development Mode you must be sure of the general settings that desribed in [common settings!](./1-common.md)
-
-
-###### WebPack Configuration
+###### Configuration of Development Mode
 
 * Create .webpack.config.dev.js  file that is include just Development Mode configurations  in root folder.
 
@@ -22,9 +17,7 @@
     * type http://localhost:8080 and now you can see the folder structure of root path.  
     That's mean webpack-server is running now.
 
-
-###### Configuration of Development Mode
-    
+   
 * add below code to webpack.config.dev.js   
 
 ```javascript

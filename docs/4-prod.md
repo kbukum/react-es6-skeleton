@@ -1,8 +1,4 @@
-##### PRODUCTION MODE
- 
-* Before set up Development Mode you must be sure of the general settings that desribed in [common settings!](./1-common.md)
-
-###### Configuration of Production Mode
+#### Configuration of Production Mode
     
 * add below code to webpack.config.prod.js    
 
