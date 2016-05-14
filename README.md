@@ -54,15 +54,19 @@ React ES6 Skeleton project is base configuration for starting to develop code wi
 #### 1. Get the latest version
 You can start by cloning the latest version of React ES6 Skeleton (RES).
 
-     
 #### 2. Run `npm install`
 This will install both run-time project dependencies and developer tools listed
 in [package.json](./package.json) file.
 
     
-#### 3. Run `npm start`
- This command will startup application on http:/localhost:8080
+#### 3. How to start project in Development Mode
+
+```shell
+$ npm start
+```
   
+Open Browser in enter http:/localhost:8080 
+
 ### How to Build for Production
 
 If you need just to build the app (without running a dev server), simply run:
@@ -78,10 +82,13 @@ $ npm test              # Run unit tests with Mocha
 ```
  
   
-  
-### Configuration Detail 
+### Understanding Configuration Detail
     
 #### Common Configuration ( React  & ES6 )
+
+Common configuration file is `webpack.config.common.js`
+
+Common configuration include base settings for Development , Test and Production Modes.
 
 [Read more!](docs/1-common.md)
 
@@ -90,6 +97,7 @@ $ npm test              # Run unit tests with Mocha
  * Common configuration must be configured before the Development Mode configuration  [common settings!](docs/1-common.md)
 
  * Set up configurations for Development Mode .
+ 
 [Read more!](docs/2-dev.md)
     
 #### Test Mode ( KARMA ) 
@@ -97,6 +105,7 @@ $ npm test              # Run unit tests with Mocha
 * Common configuration must be configured before the Test Mode configuration [common settings!](docs/1-common.md)
 
 * Set up configurations for Test Mode .
+
 [Read more!](docs/3-test.md)    
     
 #### Production Mode ( OPTIMIZE & MINIFY & BUILD )
