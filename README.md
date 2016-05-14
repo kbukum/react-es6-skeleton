@@ -20,7 +20,6 @@ React ES6 Skeleton project is base configuration for starting to develop code wi
 .
 ├── /__test__/                      # Unit tests folder
 ├── /build/                         # The folder for compiled output
-├── /data/                          # json-server mock data models
 ├── /docs/                          # Documentation files for the project
 ├── /node_modules/                  # 3rd-party libraries and utilities
 ├── /src/                           # The source code of the application
