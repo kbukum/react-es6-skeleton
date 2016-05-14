@@ -6,7 +6,6 @@ var path = require("path");
  */
 const  paths = {
     root : path.join(__dirname, "/src"), // application base path
-    mock_db : path.join(__dirname, "/data/db.json"), // mock rest server json path
     node_modules: path.join(__dirname, '/node_modules') // modules path
 };
 

@@ -51,28 +51,9 @@ commonSettings.eslint = {
 };
 
 /**
- *
- * @link https://github.com/typicode/json-server
- * @type {jsonServer|exports|module.exports}
- * start to configure mock rest server
+ * @link https://webpack.github.io/docs/hot-module-replacement-with-webpack.html
+ * @type {HotModuleReplacementPlugin}
  */
-
-/** will added mock server after
-var jsonServer = require("json-server");
-var server = jsonServer.create();
-
-server.use(jsonServer.defaults());
-
-var router = jsonServer.router(commonSettings.paths.mock_db);
-
-server.use('/api',router);
-
-server.listen(3000);
-**/
-/**
- * end to configure mock rest server
- */
-
 commonSettings.plugins.push(new webpack.HotModuleReplacementPlugin());
 
 /**

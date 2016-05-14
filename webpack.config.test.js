@@ -28,34 +28,6 @@ commonSettings.debug = true;
  */
 commonSettings.devtool = 'eval';
 
-/**
- *
- * @link https://github.com/typicode/json-server
- * @type {jsonServer|exports|module.exports}
- * start to configure mock rest server
- */
-
-/** will added mock server after
- var jsonServer = require("json-server");
- var server = jsonServer.create();
-
- server.use(jsonServer.defaults());
-
- var router = jsonServer.router(commonSettings.paths.mock_db);
-
- server.use('/api',router);
-
- server.listen(3000);
- **/
-/**
- * end to configure mock rest server
- */
-
-/**
- * end to configure mock rest server
- */
-
-
 module.exports = function(config) {
     config.set({
         browsers: ['PhantomJS'],
