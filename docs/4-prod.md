@@ -2,6 +2,13 @@
     
 * add below code to webpack.config.prod.js    
 
+#### install fs-extra
+
+```ssh
+npm install fs-extra  --save-dev
+```
+
+
 ```javascript
 var path = require("path");
 

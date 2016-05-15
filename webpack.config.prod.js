@@ -6,7 +6,7 @@ var webpack = require("webpack");
  * file-changer plugin for using move file from anywhere to another place and placeholder some parameters.
  * @type {ChangerPlugin|exports|module.exports}
  */
-var changer = require("./file-changer");
+var changer = require("webpack-file-changer");
 
 
 /**

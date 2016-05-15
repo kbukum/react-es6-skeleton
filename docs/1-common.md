@@ -13,14 +13,23 @@
 
     ```javascipt
     {
-        name: (react-es6-skeleton) oopdev-ui
-        version: (1.0.0) 1.0.0
-        description: Oopdev Blog
-        entry point: (index.js) index.js
-        test command: test
-        git repository: 
-        keywords: blog,react,es6
-        license: (ISC) ISC
+      "name": "react-es6-skeleton",
+      "version": "1.0.0",
+      "description": "React ES6 Skeleton",
+      "main": "index.js",
+      "scripts": {
+       },
+      "keywords": [
+        "react",
+        "es6",
+        "eslint",
+        "flowcheck",
+        "karma",
+        "dev",
+        "test",
+        "prod"
+      ],
+      "license": "MIT"
     }
     ```
 
@@ -98,7 +107,12 @@ npm install --save-dev file-loader
 npm install --save-dev style-loader
 ```    
    
-        
+##### install React libraries in save mode
+ 
+```ssh 
+npm install --save react react-addons-shallow-compare react-dom
+```        
+            
 * create **webpack.config.common.js** file to root directory to use in **dev**,**test**,**prod** configurations as common configuration.
 
 ###### configure webpack.config.common.js

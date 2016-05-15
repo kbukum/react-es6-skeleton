@@ -1,4 +1,6 @@
-#### Configuration of Test Mode
+### Configuration of Test Mode
+
+#### configure test 
 
 * Create .webpack.config.test.js  file that is include just Development Mode configurations  in root folder.
 
@@ -9,14 +11,12 @@
 ```
     
  
-    
-    
-* Install karma required libraries 
+#### Install karma required libraries 
 
-    npm install --save-dev karma karma-webpack mocha karma-mocha karma-bamboo-reporter karma-phantomjs-launcher karma-chrome-launcher karma-mocha-reporter karma-sourcemap-loader phantomjs-prebuilt
+    npm install --save-dev karma karma-webpack mocha karma-mocha karma-bamboo-reporter karma-phantomjs-launcher karma-chrome-launcher  karma-mocha-reporter karma-sourcemap-loader phantomjs-prebuilt react-addons-test-utils 
 
 
-* add below code to webpack.config.test.js     
+#### add below code to webpack.config.test.js     
 
 ```javascript
 var path = require('path');

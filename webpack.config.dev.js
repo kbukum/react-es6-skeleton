@@ -42,13 +42,14 @@ commonSettings.entry = {
  * @link https://github.com/MoOx/eslint-loader
  * added eslint-loader plugin for check the syntax of code by rules
  */
+
 commonSettings.module.preLoaders.push({ test: /\.jsx?$/, loaders: ['eslint'], exclude: /node_modules/ });
 commonSettings.eslint = {
-    eslint: {
+        configFile: '.eslintrc',
         failOnWarning: false,
         failOnError: true
-    }
 };
+
 
 /**
  * @link https://webpack.github.io/docs/hot-module-replacement-with-webpack.html
