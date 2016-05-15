@@ -4,6 +4,7 @@
 
 * Create .webpack.config.dev.js  file that is include just Development Mode configurations  in root folder.
 
+   
 * add command ``start ``` to scripts in **package.json** to start application in Development Mode. 
         
 ```sh
@@ -13,17 +14,30 @@
 * Install webpack-dev-server library
     
 ```sh 
-    npm install --save-dev webpack-dev-server
+    npm install --save-dev webpack-dev-server@1.14.1
 ```
     
     * type http://localhost:8080 and now you can see the folder structure of root path.  
     That's mean webpack-server is running now.
 
+#### install html-webpack-plugin 
+
+```ssh
+npm instal --save-dev html-webpack-plugin@2.17.0
+```
 
 #### install eslint
 
 ```ssh
-npm install eslint eslint-config-airbnb eslint-import-resolver-webpack eslint-loader eslint-plugin-babel eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react --save-dev
+npm instal --save-dev eslint@2.9.0
+npm instal --save-dev babel-eslint@6.0.2
+npm instal --save-dev eslint-config-airbnb@9.0.1
+npm instal --save-dev eslint-import-resolver-webpack@0.2.4
+npm instal --save-dev eslint-loader@1.3.0
+npm instal --save-dev eslint-plugin-flowtype@2.2.7
+npm instal --save-dev eslint-plugin-import@1.8.0
+npm instal --save-dev eslint-plugin-jsx-a11y@1.2.0
+npm instal --save-dev eslint-plugin-react@5.1.1
 ```  
 
 #### eslint configuration 
@@ -185,37 +199,19 @@ commonSettings.entry = {
  * @link https://github.com/MoOx/eslint-loader
  * added eslint-loader plugin for check the syntax of code by rules
  */
+
 commonSettings.module.preLoaders.push({ test: /\.jsx?$/, loaders: ['eslint'], exclude: /node_modules/ });
 commonSettings.eslint = {
-    eslint: {
+        configFile: '.eslintrc',
         failOnWarning: false,
         failOnError: true
-    }
 };
 
+
 /**
- *
- * @link https://github.com/typicode/json-server
- * @type {jsonServer|exports|module.exports}
- * start to configure mock rest server
+ * @link https://webpack.github.io/docs/hot-module-replacement-with-webpack.html
+ * @type {HotModuleReplacementPlugin}
  */
-
-/** will added mock server after
-var jsonServer = require("json-server");
-var server = jsonServer.create();
-
-server.use(jsonServer.defaults());
-
-var router = jsonServer.router(commonSettings.paths.mock_db);
-
-server.use('/api',router);
-
-server.listen(3000);
-**/
-/**
- * end to configure mock rest server
- */
-
 commonSettings.plugins.push(new webpack.HotModuleReplacementPlugin());
 
 /**

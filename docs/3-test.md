@@ -18,6 +18,22 @@
 
 #### add below code to webpack.config.test.js     
 
+```ssh
+npm install --save-dev chai@3.5.0
+npm install --save-dev karma@0.13.22
+npm install --save-dev karma-bamboo-reporter@0.1.2
+npm install --save-dev karma-chrome-launcher@1.0.1
+npm install --save-dev karma-mocha@1.0.1
+npm install --save-dev karma-mocha-reporter@2.0.3
+npm install --save-dev karma-phantomjs-launcher@1.0.0
+npm install --save-dev karma-sourcemap-loader@0.3.7
+npm install --save-dev karma-webpack@1.7.0
+npm install --save-dev mocha@2.4.5
+npm install --save-dev phantomjs-prebuilt@2.1.7
+npm install --save-dev react-addons-test-utils
+```
+
+
 ```javascript
 var path = require('path');
 
@@ -48,34 +64,6 @@ commonSettings.debug = true;
  * @type {string}
  */
 commonSettings.devtool = 'eval';
-
-/**
- *
- * @link https://github.com/typicode/json-server
- * @type {jsonServer|exports|module.exports}
- * start to configure mock rest server
- */
-
-/** will added mock server after
- var jsonServer = require("json-server");
- var server = jsonServer.create();
-
- server.use(jsonServer.defaults());
-
- var router = jsonServer.router(commonSettings.paths.mock_db);
-
- server.use('/api',router);
-
- server.listen(3000);
- **/
-/**
- * end to configure mock rest server
- */
-
-/**
- * end to configure mock rest server
- */
-
 
 module.exports = function(config) {
     config.set({

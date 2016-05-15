@@ -1,5 +1,5 @@
 {
-    "extends": ["eslint-config-airbnb"],
+    "extends": "airbnb",
     "env": {
         "es6": true        // We are writing ES6 code
     },
@@ -17,35 +17,55 @@
     },
     "plugins": [
         "react",
-        "babel",
         "flowtype"
     ],
     "rules": {
-        "quotes": [2, "double", "avoid-escape"],
+        "quotes": [
+            2,
+            "double",
+            "avoid-escape"
+        ],
         "constructor-super": 2,
         "comma-dangle": 0,
-        "eqeqeq": [2, "allow-null"],
+        "eqeqeq": [
+            2,
+            "allow-null"
+        ],
         "id-length": 0,
-        "indent": [2, 4],
+        "indent": [
+            2,
+            4
+        ],
         "no-eq-null": 0,
-        "one-var": [2, { "initialized": "never" }],
+        "one-var": [
+            2,
+            {
+                "initialized": "never"
+            }
+        ],
         "prefer-const": 0,
         "no-param-reassign": 0,
         "no-this-before-super": 2,
-        "babel/object-shorthand": 2,
         "react/jsx-boolean-value": 2,
-        "react/jsx-indent": [1,4],
+        "react/jsx-indent": [
+            1,
+            4
+        ],
         "react/jsx-no-duplicate-props": 2,
         "react/sort-comp": 0,
-        "react/prop-types": [2, { "ignore": [
-            "children",
-            "className",
-            "style",
-            "bsStyle",
-            "bsClass",
-            "bsSize"
-        ]
-        }],
+        "react/prop-types": [
+            2,
+            {
+                "ignore": [
+                    "children",
+                    "className",
+                    "style",
+                    "bsStyle",
+                    "bsClass",
+                    "bsSize"
+                ]
+            }
+        ],
         "flowtype/require-parameter-type": 1,
         "flowtype/require-return-type": [
             1,
@@ -71,7 +91,7 @@
         "flowtype": {
             "onlyFilesWithFlowAnnotation": false
         },
-        "import/resolver":{
+        "import/resolver": {
             "webpack": {
                 "config": "webpack.config.common.js"
             }

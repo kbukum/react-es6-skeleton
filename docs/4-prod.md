@@ -2,10 +2,11 @@
     
 * add below code to webpack.config.prod.js    
 
-#### install fs-extra
+#### install webpack-file-changer and fs-extra
 
 ```ssh
-npm install fs-extra  --save-dev
+npm install --save-dev webpack-file-changer fs-extra
+
 ```
 
 
@@ -18,7 +19,7 @@ var webpack = require("webpack");
  * file-changer plugin for using move file from anywhere to another place and placeholder some parameters.
  * @type {ChangerPlugin|exports|module.exports}
  */
-var changer = require("./file-changer");
+var changer = require("webpack-file-changer");
 
 
 /**
@@ -92,4 +93,5 @@ commonSettings.plugins.push(new changer({
 }));
 
 module.exports = commonSettings;
+
 ```

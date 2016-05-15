@@ -4,7 +4,7 @@ import shallowCompare from "react-addons-shallow-compare";
 class BaseComponent extends React.Component {
 
     /* eslint-disable no-useless-constructor */
-    constructor(props : Object) {
+    constructor(props: Object) {
         super(props);
     }
 

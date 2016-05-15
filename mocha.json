@@ -1,0 +1,22 @@
+{
+  "stats": {
+    "tests": 2,
+    "passes": 2,
+    "failures": 0,
+    "duration": 2
+  },
+  "failures": [],
+  "passes": [
+    {
+      "title": "Main.js Main->prop",
+      "fullTitle": "Main.js",
+      "duration": 1
+    },
+    {
+      "title": "Main.js Main->content",
+      "fullTitle": "Main.js",
+      "duration": 1
+    }
+  ],
+  "skipped": []
+}

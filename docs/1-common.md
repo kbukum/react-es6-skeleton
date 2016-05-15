@@ -38,7 +38,7 @@
 * install babel code libraries & loaders & presets
 
 ```ssh 
-npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-0
+npm install --save-dev babel-core@6.8.0, babel-loader@6.2.4 babel-preset-es2015@6.6.0 babel-preset-react@6.5.0 babel-preset-stage-0@6.5.0
 ```
 * Add following lines in babel file. 
     - react (npm install ---save-dev babel-preset-react) : babel preset for transform react code.
@@ -66,47 +66,46 @@ npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-
 #### Configuration Webpack 
 
 
-##### 
-
 ##### install webpack library 
 
 ```ssh 
-npm install --save-dev webpack
+npm install --save-dev webpack@1.13.0
 ```    
     
-*install file loaders which format will import in the code .
+##### install file loaders which format will import in the code .
  
-##### babel-loader  
+###### babel-loader  
 
 ```ssh 
 npm install --save-dev babel-loader
 ```    
  
-##### react-hot-loader 
+###### react-hot-loader 
 
 ```ssh 
 npm install --save-dev react-hot-loader
 ```    
 
-##### json-loader  
+###### json-loader  
 
 ```ssh 
 npm install --save-dev json-loader
 ```    
    
       
-##### file-loader  
+###### file-loader  
 
 ```ssh 
-npm install --save-dev file-loader
+npm install --save-dev file-loader@0.8.5
 ```    
    
-##### style-loader  
+###### style-loader  
 
 ```ssh 
 npm install --save-dev style-loader
 ```    
-   
+  
+  
 ##### install React libraries in save mode
  
 ```ssh 
