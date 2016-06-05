@@ -1,12 +1,14 @@
-# React ES6 Skeleton
+# React-ES6-Skeleton
 
-#### initial REACT & ES6 webpack project with support DEV , TEST and PROD environment configurations
+#### A skeleton project with must configurations and lots of explanations.
 
+
+RES = React-ES6-Skeleton
 
 ##### Motivation
 
-The javascript configurations can be complicated and sometimes we need to known a lot of thing to configure the project. 
-React ES6 Skeleton project is base configuration for starting to develop code with React by using ES6 style on webpack. 
+Modern Javascript ecosystem caused complicated but vital application configurations. Sometimes we need to known a lot to configure a project. Most of the developers exhausted before even running the application for the first time. 
+RES aims to configure and explain all vital structural concepts for starting to develop code with React by using ES6 on webpack. 
 
 #####  Requirements
 
@@ -52,20 +54,19 @@ React ES6 Skeleton project is base configuration for starting to develop code wi
 
 
 #### 1. Get the latest version
-You can start by cloning the latest version of React ES6 Skeleton (RES).
+You can start by cloning the latest version of RES.
 
 #### 2. Run `npm install`
 This will install both run-time project dependencies and developer tools listed
 in [package.json](./package.json) file.
 
-    
 #### 3. How to start project in Development Mode
 
 ```shell
 $ npm start
 ```
   
-Open Browser in enter http:/localhost:8080 
+Open Browser and enter `http:/localhost:8080` (default) 
 
 ### How to Build for Production
 
