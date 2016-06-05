@@ -85,7 +85,9 @@
         "flowtype/type-id-match": [
             1,
             "^([A-Z][a-z0-9]+)+Type$"
-        ]
+        ],
+        "arrow-body-style": ["error", "always"]
+
     },
     "settings": {
         "flowtype": {
