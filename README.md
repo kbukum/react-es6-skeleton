@@ -10,6 +10,14 @@ RES = React-ES6-Skeleton
 Modern Javascript ecosystem caused complicated but vital application configurations. Sometimes we need to known a lot to configure a project. Most of the developers exhausted before even running the application for the first time. 
 RES aims to configure and explain all vital structural concepts for starting to develop code with React by using ES6 on webpack. 
 
+##### What's inside
+* [Webpack](https://webpack.github.io/) for all development (server,hotload etc.) and build (package, optimize, etc.) needs.
+* [Babel](https://babeljs.io/flow) for writing codes with ES6 syntax and transpiling them browser compatible codes. 
+* [ESLint](http://eslint.org/) for protecting our nice formatted codes.
+* [Flow](http://flowtype.org/) for type checking.
+* [Karma](https://karma-runner.github.io/0.13/index.html) for testing.
+* [React](https://facebook.github.io/react/) for ui.
+
 #####  Requirements
 
 * Mac OS X, Windows, or Linux
