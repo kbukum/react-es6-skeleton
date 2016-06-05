@@ -13,8 +13,12 @@ class Main extends BaseComponent {
     }
 
     render() : string {
-        return <div>Hello {this.state.value}</div>;
+        let text: string = this.concatText(this.state.value);
+        return <div>{text}</div>;
     }
+    concatText= (value: string): string => {
+        return `Hello ${value}!`;
+    };
 
 }
 
