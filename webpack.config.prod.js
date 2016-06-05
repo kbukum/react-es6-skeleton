@@ -1,18 +1,17 @@
-var path = require("path");
-
-var webpack = require("webpack");
+const path = require("path");
+const webpack = require("webpack");
 /**
- * @link ./file-changer.js
- * file-changer plugin for using move file from anywhere to another place and placeholder some parameters.
- * @type {ChangerPlugin|exports|module.exports}
- */
-var changer = require("webpack-file-changer");
+* @link ./file-changer.js
+* file-changer plugin for using move file from anywhere to another place and placeholder some parameters.
+* @type {ChangerPlugin|exports|module.exports}
+*/
+const Changer = require("webpack-file-changer");
 
 
 /**
  * import common webpack settings
  */
-const commonSettings = require('./webpack.config.common.js');
+const commonSettings = require("./webpack.config.common.js");
 
 /**
  * @link https://github.com/webpack/docs/wiki/optimization#deduplication
@@ -33,12 +32,12 @@ commonSettings.plugins.push(new webpack.optimize.OccurenceOrderPlugin());
  * https://github.com/webpack/docs/wiki/optimization#chunks
  * @type LimitChunkCountPlugin
  */
-commonSettings.plugins.push(new webpack.optimize.LimitChunkCountPlugin({maxChunks: 15}));
+commonSettings.plugins.push(new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 15 }));
 /**
  * @link https://github.com/webpack/docs/wiki/optimization#chunks
  * @type MinChunkSizePlugin
  */
-commonSettings.plugins.push(new webpack.optimize.MinChunkSizePlugin({minChunkSize: 10000}));
+commonSettings.plugins.push(new webpack.optimize.MinChunkSizePlugin({ minChunkSize: 10000 }));
 
 /**
  *
@@ -52,7 +51,7 @@ commonSettings.entry = {
  *
  * @type {{path: (string|*), filename: string, chunkFilename: string}}
  */
-commonSettings.output= {
+commonSettings.output = {
     path: commonSettings.paths.build,
     filename: "bundle.[hash].js",
     chunkFilename: "[id].[hash].bundle.js"
@@ -62,20 +61,20 @@ commonSettings.output= {
  filename: "bundle.[hash].js",
  chunkFilename: "[id].[hash].bundle.js"
  */
-commonSettings.plugins.push(new changer({
-    move :[{
-            from: commonSettings.paths.assets,
-            to : commonSettings.paths.build
-        }
+commonSettings.plugins.push(new Changer({
+    move: [{
+        from: commonSettings.paths.assets,
+        to: commonSettings.paths.build
+    }
     ],
-    change : [{
-            file: path.join(commonSettings.output.path, 'index.html'),
-            parameters : {
-                "bundle.js":"bundle.[hash].js",
-                "BUILD_TIME" :  new Date().toString(),
-                "BUILD_NO" : new Date().getTime()
-            }
+    change: [{
+        file: path.join(commonSettings.output.path, "index.html"),
+        parameters: {
+            "bundle.js": "bundle.[hash].js",
+            BUILD_TIME: new Date().toString(),
+            BUILD_NO: new Date().getTime()
         }
+    }
     ]
 }));
 

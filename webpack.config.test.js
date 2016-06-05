@@ -1,9 +1,8 @@
-var path = require('path');
-
+"use strict";
 /**
  * import common webpack settings
  */
-const commonSettings = require('./webpack.config.common.js');
+const commonSettings = require("./webpack.config.common.js");
 
 /**
  * @link https://webpack.github.io/docs/configuration.html#cache
@@ -26,30 +25,30 @@ commonSettings.debug = true;
  * source-map - A SourceMap is emitted. See also output.sourceMapFilename.
  * @type {string}
  */
-commonSettings.devtool = 'eval';
+commonSettings.devtool = "eval";
 
-module.exports = function(config) {
+module.exports = function (config) {
     config.set({
-        browsers: ['PhantomJS'],
+        browsers: ["PhantomJS"],
         singleRun: true,
-        plugins : [
-            'karma-webpack',
-            'karma-mocha',
-            'karma-phantomjs-launcher',
-            'karma-mocha-reporter',
-            'karma-bamboo-reporter'
+        plugins: [
+            "karma-webpack",
+            "karma-mocha",
+            "karma-phantomjs-launcher",
+            "karma-mocha-reporter",
+            "karma-bamboo-reporter"
         ],
-        frameworks: ['mocha'],
+        frameworks: ["mocha"],
 
         files: [
-            '__test__/**/*.spec.js'
+            "__test__/**/*.spec.js"
         ],
         preprocessors: {
-            '__test__/**/*.spec.js': ['webpack']
+            "__test__/**/*.spec.js": ["webpack"]
         },
-        reporters: ['mocha','bamboo'],
+        reporters: ["mocha", "bamboo"],
 
-        webpack:commonSettings,
+        webpack: commonSettings,
         webpackServer: {
             noInfo: true
         }
