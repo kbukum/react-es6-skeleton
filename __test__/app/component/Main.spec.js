@@ -1,4 +1,3 @@
-// __tests__/TestExample.js
 "use strict";
 
 import React from "react";
@@ -9,20 +8,16 @@ import chai from "chai";
 import Main from "app/component/Main";
 
 describe("Main.js", () => {
-
     const component = TestUtils.renderIntoDocument(
-        <Main
-            value = "World"
-        />
+        <Main value="World" />
     );
 
     it("Main->prop", () => {
-        chai.assert.equal(component.props.value,"World");
-
+        chai.assert.equal(component.props.value, "World");
     });
+    
     it("Main->content", () => {
-        var input = ReactDOM.findDOMNode(component);
-        chai.assert.equal(input.textContent,"Hello World");
+        let input = ReactDOM.findDOMNode(component);
+        chai.assert.equal(input.textContent, "Hello World!");
     });
-
 });
