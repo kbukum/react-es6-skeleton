@@ -1,6 +1,6 @@
 # React-ES6-Skeleton
 
-#### A skeleton project with must configurations and lots of explanations.
+#### A skeleton project with vital configurations and lots of explanations.
 
 
 RES = React-ES6-Skeleton
